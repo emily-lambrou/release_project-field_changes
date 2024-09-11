@@ -92,9 +92,9 @@ def get_project_issues(owner, owner_type, project_number, release_field_name, fi
                 nodes {{
                   id
                   fieldValueByName(name: $release) {{
-                    ... on ProjectV2ItemFieldDateValue {{
+                    ... on ProjectV2ItemFieldSingleSelectValue {{
                       id
-                      date
+                      name
                     }}
                   }}
                   content {{
