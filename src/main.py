@@ -1,5 +1,4 @@
 from logger import logger
-from datetime import datetime
 import config
 import utils
 import graphql
