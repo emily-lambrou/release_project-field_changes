@@ -40,7 +40,6 @@ def notify_release_changes():
         try:
             release = projectItem.get('fieldValueByName', {}).get('name')
         except (AttributeError, ValueError) as e:
-            logger.error(f"Error processing release for issue {issue.get('title', 'Unknown Title')} (ID: {issue.get('id', 'Unknown ID')}): {e}")
             continue  # Skip this issue and move to the next
 
         issue_title = issue.get('title', 'Unknown Title')
